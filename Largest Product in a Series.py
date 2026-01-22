@@ -1,19 +1,23 @@
-num_org = num_org = """
+num = """
 73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
 85861560789112949495459501737958331952853208805511
-"""
+""".strip().replace("\n", "")
 
-parts = num_org.split("0")
 
-best = 0
-for i in range(0,13):
-    if [i:i+12]<13:
+list_of_chunks = []
+for i in range(len(num)-13):
+    chunk = num[i:(i+13)]
+    if "0" in chunk:
         continue
-    else:
-        [i:i+12]
-'   '
+    list_of_chunks.append(chunk)
 
 
-
+def largest_product():
+    best = 0
+    for chunk in range(list_of_chunks):
+        
+    
+    
+    
 
