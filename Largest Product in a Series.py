@@ -12,8 +12,16 @@ for i in range(len(num)-13):
         continue
     list_of_chunks.append(chunk)
 
-
-def largest_product():
+for chunk in list_of_chunks:
     best = 0
-    
+    for i in chunk:
+        sum = int(i)*sum
+    if sum > best:
+        best = sum
+        
+print(best)
+
+
+
+
         
