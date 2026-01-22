@@ -15,9 +15,5 @@ for i in range(len(num)-13):
 
 def largest_product():
     best = 0
-    for chunk in range(list_of_chunks):
+    
         
-    
-    
-    
-
