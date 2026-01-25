@@ -22,22 +22,22 @@ num = """
 """.strip().replace("\n", "")
 
 
-list_of_chunks = []
+list_of_chunks = [] 
 for i in range(len(num)-13):
     chunk = num[i:(i+13)]
-    if "0" in chunk:
+    if "0" in chunk: # filterd chunks
         continue
     list_of_chunks.append(chunk)
-
+# Filtered into chunks of 13 with no 0 values
 
 best = 0
 for chunk in list_of_chunks:
-    sum = 1
+    sum = 1 #Important that this stays inside the function so every chunk sum does not multiply
     for i in chunk:
         sum = int(i)*sum
     if sum > best:
         best = sum
-        
+# Found the biggest sum 
 print(best)
 
 
